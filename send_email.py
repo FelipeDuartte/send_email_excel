@@ -29,8 +29,8 @@ ticket_medio = ticket_medio.rename(columns={0: 'Ticket Medio'})
 #         {quantidade.to_html()}
 #         <p>Ticket medio</p>
 #         {ticket_medio.to_html(formatters={"Ticket Medio": 'R${:,.2f}'.format})}
-#         <p>Cordialmente,</p>
-#         <p>Felipe Duarte</p>
+#         <p>Att,</p>
+#         <p>Seu nome</p>
 #         """
 #     }
 # )
@@ -38,7 +38,7 @@ ticket_medio = ticket_medio.rename(columns={0: 'Ticket Medio'})
 #     new=k.recipient,
 #     with_properties={
 #         k.email_address: {
-#             k.address: "duarte.dev@outlook.com"
+#             k.address: "destinatario@exemplo.com.br"
 #         }
 #     }
 # )
@@ -61,9 +61,6 @@ ticket_medio = ticket_medio.rename(columns={0: 'Ticket Medio'})
 # <p>Olá,</p>
 # <p>Este é um e-mail com <b>formatação HTML</b> enviado via Python.</p>
 # """
-# # Opcional: Adicionar um anexo
-# # anexo = r"C:\caminho\para\o\seu\arquivo.pdf"
-# # mail.Attachments.Add(anexo)
 # # Enviar o e-mail
 # mail.Send()
 # print("E-mail enviado via Outlook no Windows!")
